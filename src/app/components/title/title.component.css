@@ -16,23 +16,6 @@
 .container > hr {
   margin-top: 15px;
   margin-bottom: 15px;
-}
-
-
-@media screen and (min-width: 380px) {
-  .container > h1 {
-    font-size: 35px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .container > h1 {
-    font-size: 70px;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .container > h1 {
-    font-size: 90px;
-  }
+  margin-left: 100px;
+  margin-right: 100px;
 }

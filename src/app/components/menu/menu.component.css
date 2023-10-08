@@ -17,3 +17,15 @@
 }
 
 
+.container > ul > li > a {
+  color: white;
+  font-weight: normal;
+  font-size: 16px;
+  transition: transform 0.3s, font-weight 0.3s;
+  display: inline-block; /* Para evitar quebrar a linha */
+}
+
+.container > ul > li > a:hover {
+  transform: scale(1.1); /* Aumenta o tamanho do texto em 10% */
+  font-weight: bold;
+}
