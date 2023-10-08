@@ -1,5 +1,4 @@
 .container {
-  /* border: solid white 2px; */
   width: 700px;
   margin-bottom: 10px;
 }
@@ -33,4 +32,15 @@
 .title > h1 > a {
   font-size: 25px;
   color: white;
+}
+
+.text {
+  color: gray;
+  margin-top: 10px;
+}
+
+.date {
+  color: #333;
+  font-size: 16px;
+  margin-top: 5px;
 }
