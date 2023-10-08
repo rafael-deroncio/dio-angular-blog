@@ -1,0 +1,19 @@
+.container > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.container > ul > li {
+  margin-right: 40px;
+  list-style-type: none;
+}
+
+.container > ul > li > span {
+  color: white;
+}
+
+.container > ul > li > a {
+  color: white;
+}
+
+
