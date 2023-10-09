@@ -3,7 +3,7 @@
     <img src="{{ news.photoCover }}" alt="{{ news.titleCard }}">
   </div>
   <div class="title">
-    <h1><a href="#">{{ news.titleCard }}</a></h1>
+    <h1><a [routerLink]="['/news', news.id]">{{ news.titleCard }}</a></h1>
   </div>
   <div class="resume">
     <p>{{news.textCard}}</p>

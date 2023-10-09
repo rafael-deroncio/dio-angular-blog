@@ -6,7 +6,7 @@
 
     <div class="details">
       <div class="title">
-        <h1><a href="#">{{ news.titleCard }}</a></h1>
+        <h1><a [routerLink]="['/news', news.id]">{{ news.titleCard }}</a></h1>
       </div>
 
       <div class="text">

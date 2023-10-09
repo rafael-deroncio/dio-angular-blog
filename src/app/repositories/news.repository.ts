@@ -25,10 +25,18 @@ export interface INewsRepository {
 }
 
 export  class NewsRepository implements INewsRepository {
+  private static instance: NewsRepository | null = null; // Variável estática para armazenar a única instância
   private newsData: NewsModel[] = [];
 
-  constructor() {
+  private constructor() {
     this.startNews();
+  }
+
+  public static getInstance(): NewsRepository {
+    if (NewsRepository.instance === null) {
+      NewsRepository.instance = new NewsRepository();
+    }
+    return NewsRepository.instance;
   }
 
   getAllNews(): NewsModel[] {
@@ -36,7 +44,7 @@ export  class NewsRepository implements INewsRepository {
   }
 
   getNewsById(id: number): NewsModel | undefined {
-    return this.newsData.find((news) => news.idNews === id);
+    return this.newsData.find((news) => news.id === id);
   }
 
   getRandomNews(): NewsModel {

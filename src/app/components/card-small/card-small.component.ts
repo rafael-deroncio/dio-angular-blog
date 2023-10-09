@@ -14,7 +14,7 @@ export class CardSmallComponent implements OnInit {
   news:NewsModel = new NewsModel();
 
   constructor() {
-    this.repository = new NewsRepository();
+    this.repository = NewsRepository.getInstance();
     this.news = this.repository.getRandomNews();
   }
 

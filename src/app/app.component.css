@@ -1,0 +1,9 @@
+.main {
+  margin-right: 40px; /* Aumente ou diminua conforme necessário para ajustar o espaço desejado */
+}
+
+header {
+  margin-top:  20px;
+  display: flex;
+  justify-content: center;
+}
